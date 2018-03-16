@@ -304,3 +304,26 @@ $(function() {
 		})
 	}
 })
+
+// Написать нам
+
+
+
+$(function() {
+
+	var link = $('.feedback_block').find('a'),
+		modal = $('.contact_modal'),
+		overlay = $('.overlay'),
+		close = modal.find('.close');
+
+	link.on('click', function(){
+		modal.fadeIn(200);
+		overlay.fadeIn(200);
+		return false;
+	});
+	overlay.add(close).on('click', function(){
+		modal.fadeOut(200);
+		overlay.fadeOut(200);
+	})
+	
+})

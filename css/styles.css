@@ -466,18 +466,6 @@ button.enter:hover {
 	font-size: 15px;
 	color: #fff;
 }
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background: #0d3d61;
-	opacity: .9;
-	z-index: 9;
-	display: none;
-	cursor:pointer;
-}
 
 
 /* Нижняя моб шапка */
@@ -2126,8 +2114,64 @@ div#map {
 	margin-bottom: 25px;
 }
 
-
-
+/* Модальное окно "написать нам" */
+.contact_modal {
+	width: 500px;
+	height: 400px;
+	background: #fff;
+	border-radius: 15px;
+	position: fixed;
+	z-index: 20;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	display: none;
+}
+.contact_modal .close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 30px;
+}
+.contact_modal input,
+.contact_modal textarea {
+	display: block;
+	width: 100%;	
+	padding: 0 20px;
+	color: #0d3d61;
+	font-size: 16px;
+	border: 1px solid #4e84c4;
+	outline: none;
+	margin-bottom: 20px;
+}
+.contact_modal input {
+	height: 50px;
+	line-height: 50px;
+}
+.contact_modal textarea {
+	padding: 10px 20px;
+	resize: none;
+	height: 200px;
+}
+.contact_modal .submit {
+	display: block;
+	width: 180px;
+	height: 50px;
+	border-radius: 25px;
+	background: #f60e40;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all .2s linear;
+	margin: 0 auto;
+}
+.contact_modal .submit:hover {
+	background: #d40c20;
+}
 /* Футер */
 
 .upper_footer {
