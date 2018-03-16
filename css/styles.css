@@ -2117,7 +2117,6 @@ div#map {
 /* Модальное окно "написать нам" */
 .contact_modal {
 	width: 500px;
-	height: 400px;
 	background: #fff;
 	border-radius: 15px;
 	position: fixed;
@@ -2450,12 +2449,18 @@ footer .vk {
 	.contacts_ul li {
 		margin-bottom: 10px;
 	}
+	.contact_modal {
+		width: 95%;
+	}
 }
 @media (max-width: 480px) {
 	.cart_item .controls_block a {
 		float: right;
 		margin: 0 !important;
 		font-size: 0;
+	}
+	.contact_modal {
+		padding: 40px 15px;
 	}
 }
 @media (max-width: 480px) {
